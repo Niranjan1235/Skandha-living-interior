@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skandha Groups | Construction, Interior Design &amp; Flats for Sale in Bengaluru</title>
+<meta name="description" content="Skandha Groups is a Bengaluru-based company offering residential construction, interior design and flats for sale. Request a free consultation today.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Skandha Groups | Construction, Interiors &amp; Flats in Bengaluru">
+<meta property="og:description" content="Quality construction, thoughtfully designed interiors and carefully selected residential properties in Bengaluru.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23000'/%3E%3Cpath d='M9 29h22M9 21h22M9 13h22' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{ "@context":"https://schema.org","@type":"GeneralContractor","name":"Skandha Groups","areaServed":"Bengaluru",
+  "address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressRegion":"Karnataka","addressCountry":"IN"} }
+</script>
+
+<style>
+/* ==========================================================
+   Skandha Groups: monochrome design system (v2)
+   ========================================================== */
+:root {
+  --white:#FFFFFF; --grey-1:#F3F3F3; --grey-2:#EAEAEA; --black:#000000;
+  --text-2:#555555; --line:#DDDDDD; --muted-dark:#A8A8A8;
+  --font-head:"Cormorant Garamond","Playfair Display",Georgia,"Times New Roman",serif;
+  --font-body:"Inter","DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --header-h:76px; --container:1200px; --pad:clamp(20px,5vw,48px);
+  --section-y:clamp(80px,10vw,140px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 8px);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-size:1rem;line-height:1.7;color:var(--black);background:var(--white);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none;margin:0;padding:0}
+h1,h2,h3,h4,p,figure,blockquote{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--black);outline-offset:3px}
+.ico{width:1.25em;height:1.25em;flex:none}
+.skip-link{position:absolute;left:-999px;top:8px;background:var(--black);color:var(--white);padding:10px 16px;z-index:300}
+.skip-link:focus{left:8px}
+.container{width:100%;max-width:calc(var(--container) + var(--pad)*2);margin-inline:auto;padding-inline:var(--pad)}
+
+/* Type */
+h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.05;letter-spacing:-.01em}
+h1{font-size:clamp(3rem,7.6vw,6.4rem)}
+h2{font-size:clamp(2.3rem,4.8vw,4rem)}
+h3{font-size:1.75rem;line-height:1.15}
+p{color:var(--text-2);max-width:62ch}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:.78rem;font-weight:600;letter-spacing:.16em;color:var(--black);margin-bottom:20px}
+.eyebrow::before{content:"";width:36px;height:1px;background:currentColor}
+.on-dark{color:var(--white)} .on-dark p{color:#bdbdbd}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 32px;font-size:.92rem;font-weight:600;border:1px solid var(--black);background:var(--black);color:var(--white);cursor:pointer;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn:hover{background:var(--white);color:var(--black)}
+.btn-secondary{background:var(--white);color:var(--black)}
+.btn-secondary:hover{background:var(--black);color:var(--white);border-color:var(--white)}
+.btn-light{background:var(--white);color:var(--black);border-color:var(--white)}
+.btn-light:hover{background:transparent;color:var(--white)}
+.btn-ghost{background:transparent;color:var(--white);border-color:var(--white)}
+.btn-ghost:hover{background:var(--white);color:var(--black)}
+.btn-block{width:100%}
+.btn[disabled]{opacity:.55;cursor:wait}
+
+/* Sections: every section has its own background band */
+.section{padding-block:var(--section-y);position:relative}
+.bg-white{background:var(--white)} .bg-grey{background:var(--grey-1)} .bg-grey2{background:var(--grey-2)} .bg-black{background:var(--black);color:var(--white)}
+.section-head{display:grid;gap:20px;margin-bottom:clamp(40px,5vw,72px)}
+@media(min-width:900px){.section-head.split{grid-template-columns:1.1fr 1fr;align-items:end;gap:80px}}
+
+/* Header */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:100;height:var(--header-h);color:var(--white);background:transparent;border-bottom:1px solid transparent;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s,box-shadow .35s}
+.site-header.scrolled,.site-header.menu-open{background:var(--white);color:var(--black);border-bottom-color:var(--line);box-shadow:0 2px 18px rgba(0,0,0,.06)}
+.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:inline-flex;align-items:center;gap:12px}
+.logo-mark{width:40px;height:40px;background:var(--black);border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;transition:border-color .3s}
+.logo-mark svg{width:24px;height:24px}
+.site-header.scrolled .logo-mark,.site-header.menu-open .logo-mark{border-color:var(--black)}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-text strong{font-family:var(--font-head);font-size:1.6rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.logo-text small{font-size:.62rem;font-weight:500;letter-spacing:.5em;text-transform:uppercase;margin-top:4px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav ul{display:flex;gap:24px}
+.nav ul a{font-size:.88rem;font-weight:500;position:relative;padding:6px 0}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav ul a:hover::after,.nav ul a.active::after{transform:scaleX(1)}
+.nav-cta{min-height:44px;padding:0 22px;font-size:.85rem;white-space:nowrap}
+.site-header:not(.scrolled):not(.menu-open) .nav-cta{background:var(--white);color:var(--black);border-color:var(--white)}
+.site-header:not(.scrolled):not(.menu-open) .nav-cta:hover{background:transparent;color:var(--white)}
+.menu-toggle{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative}
+.menu-toggle span{position:absolute;left:10px;right:10px;height:2px;background:currentColor;transition:transform .3s var(--ease),opacity .2s}
+.menu-toggle span:nth-child(1){top:15px}.menu-toggle span:nth-child(2){top:21px}.menu-toggle span:nth-child(3){top:27px}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:1120px){
+  .menu-toggle{display:block}
+  .nav{position:fixed;top:var(--header-h);left:0;right:0;bottom:0;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:28px;padding:32px var(--pad) calc(32px + env(safe-area-inset-bottom,0px));background:var(--white);color:var(--black);overflow-y:auto;transform:translateY(-12px);opacity:0;visibility:hidden;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s}
+  .nav.open{transform:none;opacity:1;visibility:visible}
+  .nav ul{flex-direction:column;gap:0}
+  .nav ul a{display:block;padding:16px 0;font-family:var(--font-head);font-size:1.9rem;font-weight:600;border-bottom:1px solid var(--line)}
+  .nav ul a::after{display:none}
+  .nav-cta{background:var(--black)!important;color:var(--white)!important;border-color:var(--black)!important;min-height:54px}
+}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:var(--white);background:#111;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#111}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.4) 55%,rgba(0,0,0,.3) 100%)}
+.hero-content{position:relative;padding-top:calc(var(--header-h) + 40px);padding-bottom:clamp(130px,16vw,190px)}
+.hero-kicker{display:inline-flex;align-items:center;gap:12px;color:rgba(255,255,255,.85);font-size:.85rem;letter-spacing:.08em;margin-bottom:24px}
+.hero-kicker::before{content:"";width:36px;height:1px;background:currentColor}
+.hero h1{color:var(--white);max-width:13ch}
+.hero-text{color:rgba(255,255,255,.88);font-size:clamp(1rem,1.5vw,1.15rem);max-width:54ch;margin-top:28px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.js .hero-img{animation:heroZoom 2.4s var(--ease) both}
+.js .hero-content>*{animation:rise .9s var(--ease) both}
+.js .hero-content>:nth-child(1){animation-delay:.15s}.js .hero-content>:nth-child(2){animation-delay:.3s}
+.js .hero-content>:nth-child(3){animation-delay:.5s}.js .hero-content>:nth-child(4){animation-delay:.65s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+
+/* Quick-link strip overlapping hero */
+.strip{position:relative;z-index:5;margin-top:-76px}
+.strip-grid{display:grid;gap:0;background:var(--white);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.18)}
+.strip-item{display:flex;align-items:center;gap:18px;padding:26px 28px;border-bottom:1px solid var(--line);transition:background .3s var(--ease),color .3s var(--ease)}
+.strip-item:last-child{border-bottom:0}
+.strip-item .si-ico{width:52px;height:52px;border-radius:50%;background:var(--black);color:var(--white);display:grid;place-items:center;flex:none;transition:background .3s,color .3s}
+.strip-item .si-ico svg{width:26px;height:26px}
+.strip-item strong{display:block;font-family:var(--font-head);font-size:1.45rem;line-height:1.1}
+.strip-item span.sub{font-size:.85rem;color:var(--text-2);transition:color .3s}
+.strip-item .si-arrow{margin-left:auto;transition:transform .3s var(--ease)}
+.strip-item:hover{background:var(--black);color:var(--white)}
+.strip-item:hover .sub{color:#bdbdbd}
+.strip-item:hover .si-ico{background:var(--white);color:var(--black)}
+.strip-item:hover .si-arrow{transform:translateX(5px)}
+@media(min-width:900px){.strip-grid{grid-template-columns:repeat(3,1fr)}.strip-item{border-bottom:0;border-right:1px solid var(--line)}.strip-item:last-child{border-right:0}}
+
+
+/* ============ Scroll effects ============ */
+/* Hero stays pinned; the rest of the page slides up over it like a curtain */
+.hero{position:sticky;top:0;z-index:0}
+main>.strip{z-index:5}
+main>.section,main>.band{z-index:2}
+.strip{background:linear-gradient(to bottom,transparent 76px,var(--white) 76px)}
+.hero-media{position:absolute;inset:0;will-change:transform;transform-origin:center 40%}
+.hero-dim{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+.hero-content{will-change:transform,opacity}
+.scroll-cue{position:absolute;right:clamp(20px,4vw,48px);bottom:128px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--white);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.scroll-cue span{writing-mode:vertical-rl}
+.scroll-cue i{position:relative;display:block;width:1px;height:64px;background:rgba(255,255,255,.3);overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:0;width:100%;height:50%;background:var(--white);animation:cue 1.9s var(--ease) infinite}
+@keyframes cue{0%{transform:translateY(-100%)}100%{transform:translateY(200%)}}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:#fff;mix-blend-mode:difference;z-index:120;pointer-events:none}
+@media(max-width:720px){.scroll-cue{display:none}}
+
+/* Reveal */
+.js [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+.js [data-reveal].in{opacity:1;transform:none}
+
+/* About */
+.about{padding-top:calc(var(--section-y) + 20px)}
+.about-grid{display:grid;gap:64px;align-items:center}
+.about-media{position:relative;padding-bottom:16%}
+.photo{background-size:cover;background-position:center;background-color:var(--grey-2)}
+.about-img-main{width:84%;aspect-ratio:4/5}
+.about-img-second{position:absolute;right:0;bottom:0;width:46%;aspect-ratio:1/1.15;border:10px solid var(--white)}
+.about-badge{position:absolute;left:-1px;bottom:0;background:var(--black);color:var(--white);padding:22px 26px;max-width:230px;z-index:2}
+.about-badge strong{display:block;font-family:var(--font-head);font-size:1.6rem;line-height:1.1}
+.about-badge span{font-size:.82rem;color:#bdbdbd}
+.about-copy h2{margin-bottom:24px}
+.about-copy>p+p{margin-top:16px}
+.highlights{margin:36px 0;border-top:1px solid var(--line)}
+.highlights li{display:flex;gap:18px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line)}
+.highlights .h-ico{width:44px;height:44px;border:1px solid var(--black);border-radius:50%;display:grid;place-items:center;flex:none}
+.highlights .h-ico svg{width:22px;height:22px}
+.highlights strong{display:block;font-weight:600}
+.highlights span.d{color:var(--text-2);font-size:.95rem}
+@media(min-width:900px){.about-grid{grid-template-columns:1.05fr 1fr;gap:100px}}
+
+/* Services: alternating feature rows */
+.srows{display:grid;gap:clamp(56px,8vw,112px)}
+.srow{display:grid;gap:32px;align-items:center}
+.srow-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--grey-2)}
+.srow-img{position:absolute;inset:0;transition:transform 1.4s var(--ease)}
+.srow:hover .srow-img{transform:scale(1.05)}
+.srow-chip{position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:12px;background:var(--white);padding:14px 22px 14px 14px;font-weight:600;font-size:.9rem}
+.srow-chip svg{width:40px;height:40px;padding:9px;border-radius:50%;background:var(--black);color:var(--white)}
+.srow-copy h3{font-size:clamp(2.2rem,4vw,3.3rem);margin-bottom:18px}
+.srow-copy>p{font-size:1.02rem}
+.checks{margin:28px 0 34px;border-top:1px solid #d2d2d2}
+.checks li{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid #d2d2d2;font-weight:500}
+.checks .ico{width:22px;height:22px;padding:4px;border-radius:50%;background:var(--black);color:var(--white)}
+.js .srow-media{clip-path:inset(0 100% 0 0);transition:clip-path 1.2s var(--ease)}
+.js .srow.in .srow-media{clip-path:inset(0 0 0 0)}
+@media(min-width:900px){
+  .srow{grid-template-columns:1.15fr 1fr;gap:96px}
+  .srow:nth-child(even){grid-template-columns:1fr 1.15fr}
+  .srow:nth-child(even) .srow-media{order:2}
+  .js .srow:nth-child(even) .srow-media{clip-path:inset(0 0 0 100%)}
+  .js .srow:nth-child(even).in .srow-media{clip-path:inset(0 0 0 0)}
+}
+
+/* Why choose us (black band) */
+.why-grid{display:grid;gap:56px;align-items:start}
+.why-copy h2{margin-bottom:22px;color:var(--white)}
+.why-copy .btn{margin-top:32px}
+.tiles{display:grid;gap:16px}
+.tile{background:#101010;border:1px solid #2a2a2a;padding:34px 28px 30px;transition:background .4s var(--ease),border-color .4s,transform .4s var(--ease)}
+.tile h3{font-size:1.55rem;margin:26px 0 10px;color:var(--white);transition:color .4s}
+.tile p{font-size:.95rem;color:#b5b5b5;transition:color .4s}
+.tile-ico{width:64px;height:64px;border-radius:50%;background:var(--white);color:var(--black);display:grid;place-items:center;transition:background .4s,color .4s}
+.tile-ico svg{width:30px;height:30px}
+.tile:hover{background:var(--white);border-color:var(--white);transform:translateY(-4px)}
+.tile:hover h3{color:var(--black)} .tile:hover p{color:var(--text-2)}
+.tile:hover .tile-ico{background:var(--black);color:var(--white)}
+@media(min-width:640px){.tiles{grid-template-columns:repeat(2,1fr);gap:20px}}
+@media(min-width:1000px){.why-grid{grid-template-columns:.85fr 1.4fr;gap:88px}.why-copy{position:sticky;top:calc(var(--header-h) + 40px)}}
+
+/* Testimonials */
+.t-grid{display:grid;gap:40px;align-items:start}
+.t-intro p:not(.eyebrow){margin-top:20px}
+.t-intro h2{max-width:12ch}
+.t-tabs{display:flex;gap:8px;overflow-x:auto;margin-top:32px;scrollbar-width:none}
+.t-tabs::-webkit-scrollbar{display:none}
+.t-tab{flex:none;display:flex;flex-direction:column;text-align:left;gap:2px;padding:12px 20px;background:var(--white);border:1px solid var(--line);cursor:pointer;transition:background .3s var(--ease),color .3s,border-color .3s}
+.t-tab span{font-weight:600;font-size:.95rem}
+.t-tab small{font-size:.78rem;color:var(--text-2)}
+.t-tab:hover{border-color:var(--black)}
+.t-tab.active{background:var(--black);color:var(--white);border-color:var(--black)}
+.t-tab.active small{color:#bdbdbd}
+.t-wrap{position:relative;background:var(--white);border:1px solid var(--line);padding:clamp(28px,5vw,64px);display:flex;flex-direction:column;min-height:440px;overflow:hidden}
+.t-wrap::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--black)}
+.t-panels{flex:1;display:flex}
+.t-panel{display:none;flex-direction:column;gap:20px;flex:1}
+.t-panel.active{display:flex;animation:tIn .6s var(--ease)}
+@keyframes tIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.t-mark{font-family:var(--font-head);font-size:9rem;line-height:.7;height:4.2rem}
+.t-panel blockquote{flex:1;font-family:var(--font-head);font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.25;font-weight:500;max-width:28ch}
+.t-person{display:flex;align-items:center;flex-wrap:wrap;gap:16px;padding-top:24px;margin-top:12px;border-top:1px solid var(--line)}
+.t-person>div{display:flex;flex-direction:column;line-height:1.4}
+.t-person>div span{color:var(--text-2);font-size:.9rem}
+.t-avatar{width:56px;height:56px;border-radius:50%;background:var(--black);color:var(--white);display:grid;place-items:center;font-weight:600;font-size:.95rem;flex:none}
+.t-flag{margin-left:auto;font-size:.72rem;font-weight:600;border:1px dashed var(--text-2);padding:3px 10px;color:var(--text-2)}
+.t-foot{display:flex;align-items:center;gap:20px;margin-top:32px}
+.t-progress{flex:1;height:2px;background:var(--line);position:relative}
+.t-progress span{position:absolute;inset:0 auto 0 0;width:33.33%;background:var(--black);transition:width .5s var(--ease)}
+.t-count{font-size:.85rem;font-weight:600;font-variant-numeric:tabular-nums}
+.carousel-controls{display:flex;gap:10px}
+.arrow-btn{width:52px;height:52px;display:grid;place-items:center;background:var(--white);border:1px solid var(--black);cursor:pointer;transition:background .25s,color .25s}
+.arrow-btn:hover{background:var(--black);color:var(--white)}
+@media(min-width:960px){
+  .t-grid{grid-template-columns:.8fr 1.4fr;gap:80px}
+  .t-tabs{flex-direction:column;margin-top:40px;overflow:visible;gap:0;border-top:1px solid var(--line)}
+  .t-tab{flex-direction:row;justify-content:space-between;align-items:center;padding:20px 22px;border:0;border-bottom:1px solid var(--line);background:transparent}
+  .t-tab.active{background:var(--black)}
+}
+@media(max-width:560px){.t-flag{margin-left:0}}
+
+/* Photo CTA band */
+.band{position:relative;color:var(--white);padding-block:clamp(90px,12vw,170px);text-align:center;overflow:hidden;background:#111}
+.band-img{position:absolute;inset:0;background-size:cover;background-position:center}
+.band::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.62);z-index:1}
+.band .container{position:relative;z-index:2}
+.band h2{color:var(--white);max-width:16ch;margin:0 auto}
+.band p{color:rgba(255,255,255,.85);margin:22px auto 0}
+.band .hero-actions{justify-content:center}
+
+/* Office */
+.office-grid{display:grid;gap:48px;align-items:stretch}
+.office-info h2{margin-bottom:20px}
+.contact-list{margin:32px 0;border-top:1px solid var(--line)}
+.contact-list li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.contact-list .ico{margin-top:3px}
+.contact-list strong{display:block;font-weight:600;font-size:.9rem}
+.contact-list span,.contact-list a{color:var(--text-2)}
+.contact-list a:hover span{color:var(--black)}
+.contact-list.compact{margin:28px 0}
+.contact-list.compact li{align-items:center;padding:14px 0;border-color:#cfcfcf}
+.contact-list.compact .ico{margin-top:0}
+.office-map{min-height:400px;background:var(--grey-2);border:1px solid var(--line)}
+.office-map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+@media(min-width:900px){.office-grid{grid-template-columns:1fr 1.2fr;gap:80px}}
+
+/* Enquiry */
+.contact-grid{display:grid;gap:56px;align-items:start}
+.contact-copy h2{margin-bottom:22px}
+.contact-img{margin-top:36px;width:100%;max-width:460px;aspect-ratio:16/11;display:none}
+.enquiry{background:var(--white);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.08);padding:clamp(24px,4vw,48px);display:grid;gap:22px}
+.field{display:grid;gap:8px}
+.field-row{display:grid;gap:22px}
+label{font-size:.88rem;font-weight:600}
+input,select,textarea{width:100%;background:var(--white);border:1px solid var(--line);border-radius:0;padding:14px 16px;min-height:52px;transition:border-color .2s;-webkit-appearance:none;appearance:none}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+textarea{resize:vertical;min-height:120px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--black);box-shadow:0 0 0 1px var(--black)}
+input::placeholder,textarea::placeholder{color:#999}
+.field.invalid input,.field.invalid select{border-color:var(--black);box-shadow:0 0 0 1px var(--black)}
+.error{font-size:.85rem;font-weight:500;display:none}
+.field.invalid .error{display:block}
+.error::before{content:"! ";font-weight:700}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form-status{font-size:.95rem;font-weight:500;color:var(--black);display:none;max-width:none}
+.form-status.show{display:block;padding:14px 16px;border:1px solid var(--black);background:var(--grey-1)}
+.form-status.success{border-left-width:6px}
+@media(min-width:640px){.field-row{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.contact-grid{grid-template-columns:1fr 1.1fr;gap:88px}.contact-img{display:block}}
+
+/* Footer */
+.footer{background:var(--black);color:var(--white);padding-top:clamp(56px,8vw,96px)}
+.footer p{color:var(--muted-dark)}
+.footer-grid{display:grid;gap:40px;padding-bottom:56px}
+.footer .logo-mark{border-color:rgba(255,255,255,.6)}
+.footer-brand p{margin:22px 0;max-width:34ch;font-size:.95rem}
+.socials{display:flex;gap:10px}
+.socials a{width:44px;height:44px;display:grid;place-items:center;border:1px solid #444;transition:background .25s,color .25s,border-color .25s}
+.socials a:hover{background:var(--white);color:var(--black);border-color:var(--white)}
+.footer h4{font-family:var(--font-body);font-size:.85rem;font-weight:600;letter-spacing:.08em;margin:0 0 20px}
+.footer li{margin-bottom:12px;color:var(--muted-dark);font-size:.95rem}
+.footer li a{transition:color .2s}.footer li a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid #2c2c2c;padding-block:24px;display:flex;flex-direction:column;gap:10px;font-size:.88rem}
+.link-btn{background:none;border:0;padding:0;cursor:pointer;color:inherit;text-decoration:underline;text-underline-offset:3px}
+.link-btn:hover{color:var(--white)}
+@media(min-width:640px){.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.footer-grid{grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:56px}.footer-bottom{flex-direction:row;justify-content:space-between}}
+
+/* ============ Sticky contact dock ============ */
+.dock{position:fixed;z-index:90;right:22px;bottom:22px;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.dock a{position:relative;display:flex;flex-direction:row-reverse;align-items:center;height:58px;min-width:58px;padding:0 17px;border-radius:999px;background:var(--black);color:var(--white);box-shadow:0 12px 32px rgba(0,0,0,.3),inset 0 0 0 1px rgba(255,255,255,.22);transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease),box-shadow .3s}
+.dock a .ico{width:24px;height:24px}
+.dock .lbl{max-width:0;overflow:hidden;white-space:nowrap;opacity:0;font-size:.85rem;font-weight:600;transition:max-width .45s var(--ease),opacity .3s,margin .45s var(--ease)}
+.dock a:hover,.dock a:focus-visible{background:var(--white);color:var(--black);transform:translateX(-4px);box-shadow:0 12px 32px rgba(0,0,0,.3),0 0 0 1px var(--black)}
+.dock a:hover .lbl,.dock a:focus-visible .lbl{max-width:150px;opacity:1;margin-right:12px}
+.dock .wa::after{content:"";position:absolute;inset:0;border-radius:999px;border:1.5px solid var(--black);animation:pulse 2.6s var(--ease) infinite;pointer-events:none}
+@keyframes pulse{0%{transform:scale(1);opacity:.55}70%,100%{transform:scale(1.55);opacity:0}}
+@media(max-width:720px){
+  body{padding-bottom:calc(86px + env(safe-area-inset-bottom,0px))}
+  .dock{inset:auto 12px calc(12px + env(safe-area-inset-bottom,0px)) 12px;flex-direction:row;align-items:stretch;gap:6px;padding:6px;background:rgba(0,0,0,.94);border-radius:22px;box-shadow:0 12px 36px rgba(0,0,0,.35);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  .dock a{flex:1;flex-direction:column;justify-content:center;gap:5px;height:auto;min-width:0;padding:10px 4px 8px;border-radius:16px;background:transparent;box-shadow:none}
+  .dock .lbl{max-width:none;opacity:1;margin:0!important;font-size:.7rem;font-weight:500;letter-spacing:.02em}
+  .dock a.wa{background:var(--white);color:var(--black)}
+  .dock a:hover,.dock a:focus-visible{transform:none;box-shadow:none}
+  .dock a:not(.wa):hover{background:#222;color:var(--white)}
+  .dock a.wa:hover{background:#e6e6e6}
+  .dock .wa::after{display:none}
+}
+
+/* Legal dialogs */
+dialog.legal{border:1px solid var(--black);padding:0;max-width:min(560px,92vw)}
+dialog.legal::backdrop{background:rgba(0,0,0,.6)}
+.legal-box{padding:36px;display:grid;gap:20px;background:var(--white)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .js .srow-media,.js .srow:nth-child(even) .srow-media{clip-path:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H4M10 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z" fill="currentColor"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-build" viewBox="0 0 48 48"><path d="M6 40h36M10 40V18l14-10 14 10v22M18 40V28h12v12M24 8V4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sofa" viewBox="0 0 48 48"><path d="M8 24v-6a6 6 0 016-6h20a6 6 0 016 6v6M4 28a4 4 0 018 0v4h24v-4a4 4 0 018 0v8H4zM10 36v4M38 36v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-flat" viewBox="0 0 48 48"><path d="M10 42V8h20v34M30 18h8v24M4 42h40M16 16h8M16 24h8M16 32h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-quality" viewBox="0 0 48 48"><path d="M6 36h36M10 36V20l14-10 14 10v16M18 36V26h12v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-design" viewBox="0 0 48 48"><path d="M8 40l4-12L34 6l8 8-22 22-12 4zM28 12l8 8M12 28l8 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-comm" viewBox="0 0 48 48"><path d="M6 10h36v22H20l-8 8v-8H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 18h20M14 25h12" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-support" viewBox="0 0 48 48"><path d="M24 6l18 9-18 9-18-9zM6 24l18 9 18-9M6 33l18 9 18-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo" aria-label="Skandha Groups home">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M4 12h16M4 6h16" stroke="#fff" stroke-width="2"/></svg></span>
+      <span class="logo-text"><strong>Skandha</strong><small>Groups</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#office">Our Office</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Free Consultation</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1721222204126-e7042f2893b1?auto=format&fit=crop&w=2200&q=75" alt="Modern house with a pool and landscaped garden" width="2200" height="1400" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-dim"></div>
+  <div class="container hero-content">
+    <p class="hero-kicker">Skandha Groups &middot; Bengaluru</p>
+    <h1>Building Dreams. Designing Better Living.</h1>
+    <p class="hero-text">From quality construction and thoughtfully designed interiors to carefully selected residential properties, we help bring your vision of a better home to life.</p>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-light">Explore Our Services</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span>Scroll</span><i></i></a>
+</section>
+
+<!-- Quick links overlapping the hero -->
+<div class="strip">
+  <div class="container">
+    <div class="strip-grid" data-reveal>
+      <a class="strip-item" href="#contact" data-service="Construction"><span class="si-ico"><svg aria-hidden="true"><use href="#i-build"/></svg></span><div><strong>Construction</strong><span class="sub">Residential building</span></div><svg class="ico si-arrow"><use href="#i-arrow"/></svg></a>
+      <a class="strip-item" href="#contact" data-service="Interior Design"><span class="si-ico"><svg aria-hidden="true"><use href="#i-sofa"/></svg></span><div><strong>Interior Design</strong><span class="sub">Homes made to live in</span></div><svg class="ico si-arrow"><use href="#i-arrow"/></svg></a>
+      <a class="strip-item" href="#contact" data-service="Flats for Sale"><span class="si-ico"><svg aria-hidden="true"><use href="#i-flat"/></svg></span><div><strong>Flats for Sale</strong><span class="sub">Residential properties</span></div><svg class="ico si-arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ABOUT (white) ============ -->
+<section class="section bg-white about" id="about">
+  <div class="container about-grid">
+    <div class="about-media" data-reveal>
+      <div class="photo about-img-main" role="img" aria-label="Contemporary residential building with curved balconies" style="background-image:url('https://images.unsplash.com/photo-1768164630015-1ad8a3a574fe?auto=format&fit=crop&w=1200&q=75')"></div>
+      <div class="photo about-img-second" role="img" aria-label="Glass facade detail of a modern building" style="background-image:url('https://images.unsplash.com/photo-1768505005984-689020c196fe?auto=format&fit=crop&w=700&q=75')"></div>
+      <div class="about-badge"><strong>Based in Bengaluru</strong><span>Construction, interiors and residential properties</span></div>
+    </div>
+    <div class="about-copy" data-reveal>
+      <p class="eyebrow">ABOUT OUR COMPANY</p>
+      <h2>Spaces Built Around Your Vision</h2>
+      <p>Skandha Groups is a Bengaluru-based company working across residential construction, interior design and property sales. We keep every project grounded in how people actually live: the light in a room, the flow of a floor plan, the finish on a wall.</p>
+      <p>Whether you are building a home, furnishing one, or looking for a flat to buy, you deal with one team that understands the whole journey.</p>
+      <ul class="highlights">
+        <li><span class="h-ico"><svg aria-hidden="true"><use href="#i-design"/></svg></span><div><strong>Thoughtful Design</strong><span class="d">Plans shaped around your space and routine.</span></div></li>
+        <li><span class="h-ico"><svg aria-hidden="true"><use href="#i-quality"/></svg></span><div><strong>Quality Execution</strong><span class="d">Careful materials, detailing and finishing.</span></div></li>
+        <li><span class="h-ico"><svg aria-hidden="true"><use href="#i-comm"/></svg></span><div><strong>Customer-Focused Service</strong><span class="d">Clear communication from first call to handover.</span></div></li>
+      </ul>
+      <a href="#why-us" class="btn btn-primary">Discover Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES (light grey) ============ -->
+<section class="section bg-grey" id="services">
+  <div class="container">
+    <div class="section-head split" data-reveal>
+      <div><p class="eyebrow">WHAT WE DO</p><h2>Our Services</h2></div>
+      <p>Three ways we help you get a better home: build it, furnish it, or find one that is ready to move into.</p>
+    </div>
+    <div class="srows">
+      <article class="srow" data-reveal>
+        <div class="srow-media">
+          <div class="photo srow-img" role="img" aria-label="House under construction with timber roof framing" style="background-image:url('https://images.unsplash.com/photo-1687169503260-85f00f122398?auto=format&fit=crop&w=1200&q=75')"></div>
+          <span class="srow-chip"><svg aria-hidden="true"><use href="#i-build"/></svg>Construction</span>
+        </div>
+        <div class="srow-copy">
+          <h3>Construction</h3>
+          <p>Residential construction solutions focused on thoughtful planning, quality workmanship, and efficient execution.</p>
+          <ul class="checks"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Thoughtful planning</li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Quality workmanship</li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Efficient execution</li></ul>
+          <a href="#contact" class="btn btn-primary" data-service="Construction">Explore Construction</a>
+        </div>
+      </article>
+      <article class="srow" data-reveal>
+        <div class="srow-media">
+          <div class="photo srow-img" role="img" aria-label="Modern kitchen with island and marble worktop" style="background-image:url('https://images.unsplash.com/photo-1769326541248-5e09a8ace25b?auto=format&fit=crop&w=1200&q=75')"></div>
+          <span class="srow-chip"><svg aria-hidden="true"><use href="#i-sofa"/></svg>Interior Design</span>
+        </div>
+        <div class="srow-copy">
+          <h3>Interior Design</h3>
+          <p>Functional, elegant interiors designed around your lifestyle, space requirements, and personal preferences.</p>
+          <ul class="checks"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Designed around your lifestyle</li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Practical use of space</li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Your personal preferences</li></ul>
+          <a href="#contact" class="btn btn-primary" data-service="Interior Design">Explore Interiors</a>
+        </div>
+      </article>
+      <article class="srow" data-reveal>
+        <div class="srow-media">
+          <div class="photo srow-img" role="img" aria-label="Modern apartment building with balconies" style="background-image:url('https://images.unsplash.com/photo-1760894492960-5b0a2da0676d?auto=format&fit=crop&w=1200&q=75')"></div>
+          <span class="srow-chip"><svg aria-hidden="true"><use href="#i-flat"/></svg>Flats for Sale</span>
+        </div>
+        <div class="srow-copy">
+          <h3>Flats for Sale</h3>
+          <p>Discover residential properties with information about location, floor plans, amenities, pricing, and availability.</p>
+          <ul class="checks"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Location and floor plans</li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Amenities</li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Pricing and availability</li></ul>
+          <a href="#contact" class="btn btn-primary" data-service="Flats for Sale">Explore Properties</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US (black) ============ -->
+<section class="section bg-black" id="why-us">
+  <div class="container why-grid">
+    <div class="why-copy on-dark" data-reveal>
+      <p class="eyebrow">WHY SKANDHA GROUPS</p>
+      <h2>Why Choose Us?</h2>
+      <p>A thoughtful approach to construction, interiors, and property solutions, with a focus on quality, functionality, and customer experience.</p>
+      <a href="#contact" class="btn btn-light">Talk to Our Team</a>
+    </div>
+    <div class="tiles">
+      <div class="tile" data-reveal style="--d:0ms"><div class="tile-ico"><svg aria-hidden="true"><use href="#i-quality"/></svg></div><h3>Quality Workmanship</h3><p>Attention to materials, detailing, and finishing.</p></div>
+      <div class="tile" data-reveal style="--d:100ms"><div class="tile-ico"><svg aria-hidden="true"><use href="#i-design"/></svg></div><h3>Thoughtful Design</h3><p>Practical and visually appealing spaces tailored to individual needs.</p></div>
+      <div class="tile" data-reveal style="--d:200ms"><div class="tile-ico"><svg aria-hidden="true"><use href="#i-comm"/></svg></div><h3>Transparent Communication</h3><p>Clear discussions and project updates.</p></div>
+      <div class="tile" data-reveal style="--d:300ms"><div class="tile-ico"><svg aria-hidden="true"><use href="#i-support"/></svg></div><h3>End-to-End Support</h3><p>Assistance throughout the relevant stages of construction, interior design, or property selection.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS (light grey) ============ -->
+<section class="section bg-grey" id="testimonials">
+  <div class="container t-grid">
+    <div class="t-intro" data-reveal>
+      <p class="eyebrow">CLIENT REVIEWS</p>
+      <h2>What Our Clients Say</h2>
+      <p>Real words from the people we have built, designed and sold homes for. Choose a service to read its review.</p>
+      <div class="t-tabs" role="tablist" aria-label="Reviews by service">
+        <button class="t-tab active" id="t-tab-0" role="tab" aria-selected="true" aria-controls="t-panel-0" tabindex="0" type="button"><span>Construction</span><small>Client name</small></button>
+        <button class="t-tab" id="t-tab-1" role="tab" aria-selected="false" aria-controls="t-panel-1" tabindex="-1" type="button"><span>Interior Design</span><small>Client name</small></button>
+        <button class="t-tab" id="t-tab-2" role="tab" aria-selected="false" aria-controls="t-panel-2" tabindex="-1" type="button"><span>Flats for Sale</span><small>Client name</small></button>
+      </div>
+    </div>
+    <div class="t-wrap" data-reveal style="--d:120ms">
+      <!-- PLACEHOLDERS: replace each review with a genuine client review (with permission). Update initials, name and service too. -->
+      <div class="t-panels">
+        <div class="t-panel active" id="t-panel-0" role="tabpanel" aria-labelledby="t-tab-0">
+          <span class="t-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Add a genuine client review here, in the client's own words, once you have their permission to publish it.</blockquote>
+          <div class="t-person"><span class="t-avatar" aria-hidden="true">CN</span><div><strong>Client name</strong><span>Construction</span></div><span class="t-flag">Placeholder review</span></div>
+        </div>
+        <div class="t-panel" id="t-panel-1" role="tabpanel" aria-labelledby="t-tab-1" hidden>
+          <span class="t-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Add a genuine client review here, in the client's own words, once you have their permission to publish it.</blockquote>
+          <div class="t-person"><span class="t-avatar" aria-hidden="true">CN</span><div><strong>Client name</strong><span>Interior Design</span></div><span class="t-flag">Placeholder review</span></div>
+        </div>
+        <div class="t-panel" id="t-panel-2" role="tabpanel" aria-labelledby="t-tab-2" hidden>
+          <span class="t-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Add a genuine client review here, in the client's own words, once you have their permission to publish it.</blockquote>
+          <div class="t-person"><span class="t-avatar" aria-hidden="true">CN</span><div><strong>Client name</strong><span>Flats for Sale</span></div><span class="t-flag">Placeholder review</span></div>
+        </div>
+      </div>
+      <div class="t-foot">
+        <div class="t-progress" aria-hidden="true"><span id="tProgress"></span></div>
+        <span class="t-count" id="tCount" aria-live="polite">1 / 3</span>
+        <div class="carousel-controls">
+          <button class="arrow-btn" id="prevBtn" type="button" aria-label="Previous review"><svg class="ico"><use href="#i-left"/></svg></button>
+          <button class="arrow-btn" id="nextBtn" type="button" aria-label="Next review"><svg class="ico"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHOTO CTA BAND ============ -->
+<section class="band" aria-labelledby="bandTitle">
+  <div class="band-img" role="img" aria-label="Modern high-rise residential building" style="background-image:url('https://images.unsplash.com/photo-1759882611054-fa61e7fa3099?auto=format&fit=crop&w=2000&q=70')"></div>
+  <div class="container" data-reveal>
+    <h2 id="bandTitle">Ready to start your project?</h2>
+    <p>Tell us what you are planning. We will get back to you to talk through the next steps.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-light">Get a Free Consultation</a>
+      <a data-cfg-tel href="tel:" class="btn btn-ghost">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFICE LOCATION (white) ============ -->
+<section class="section bg-white" id="office">
+  <div class="container office-grid">
+    <div class="office-info" data-reveal>
+      <p class="eyebrow">VISIT US</p>
+      <h2>Our Office in Bengaluru</h2>
+      <p>Drop in to discuss your project, view material samples or talk through available properties. Please call ahead so we can have the right person ready for you.</p>
+      <ul class="contact-list">
+        <li><svg class="ico"><use href="#i-pin"/></svg><div><strong>Address</strong><span data-cfg="addressHtml">Skandha Groups, [Office address], Bengaluru, Karnataka</span></div></li>
+        <li><svg class="ico"><use href="#i-phone"/></svg><div><strong>Phone</strong><a data-cfg-tel href="tel:"><span data-cfg="phone">+91 00000 00000</span></a></div></li>
+        <li><svg class="ico"><use href="#i-mail"/></svg><div><strong>Email</strong><a data-cfg-mail href="mailto:"><span data-cfg="email">info@example.com</span></a></div></li>
+        <li><svg class="ico"><use href="#i-clock"/></svg><div><strong>Office hours</strong><span data-cfg="hours">Monday to Saturday, 10:00 am to 6:00 pm</span></div></li>
+      </ul>
+      <a href="#" class="btn btn-primary" id="directionsBtn" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+    <div class="office-map" data-reveal>
+      <iframe id="mapFrame" title="Skandha Groups office location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENQUIRY (mid grey) ============ -->
+<section class="section bg-grey2" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy" data-reveal>
+      <p class="eyebrow">ENQUIRE NOW</p>
+      <h2>Let's Build Something Beautiful Together</h2>
+      <p>Tell us what you have in mind. Share a few details and our team will get back to you to discuss the next steps.</p>
+      <ul class="contact-list compact">
+        <li><svg class="ico"><use href="#i-phone"/></svg><a data-cfg-tel href="tel:"><span data-cfg="phone">+91 00000 00000</span></a></li>
+        <li><svg class="ico"><use href="#i-mail"/></svg><a data-cfg-mail href="mailto:"><span data-cfg="email">info@example.com</span></a></li>
+        <li><svg class="ico"><use href="#i-pin"/></svg><span>Bengaluru, Karnataka</span></li>
+      </ul>
+      <div class="photo contact-img" role="img" aria-label="Modern living room interior" style="background-image:url('https://images.unsplash.com/photo-1746517757473-7c88850e539b?auto=format&fit=crop&w=1000&q=75')"></div>
+    </div>
+
+    <form class="enquiry" id="enquiryForm" novalidate data-reveal>
+      <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" autocomplete="name" required><p class="error" id="name-err" role="alert"></p></div>
+      <div class="field-row">
+        <div class="field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required><p class="error" id="phone-err" role="alert"></p></div>
+        <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" autocomplete="email" required><p class="error" id="email-err" role="alert"></p></div>
+      </div>
+      <div class="field">
+        <label for="service">Service Required</label>
+        <select id="service" name="service" required><option value="">Select a service</option><option>Construction</option><option>Interior Design</option><option>Flats for Sale</option></select>
+        <p class="error" id="service-err" role="alert"></p>
+      </div>
+      <div class="field-row">
+        <div class="field"><label for="location">Preferred Location</label><input type="text" id="location" name="location" placeholder="e.g. Whitefield"></div>
+        <div class="field"><label for="budget">Approximate Budget</label><input type="text" id="budget" name="budget" placeholder="e.g. 50 lakh"></div>
+      </div>
+      <div class="field"><label for="details">Project Details</label><textarea id="details" name="details" rows="4"></textarea></div>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Submit Enquiry</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo" aria-label="Skandha Groups home">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M4 12h16M4 6h16" stroke="#fff" stroke-width="2"/></svg></span>
+        <span class="logo-text"><strong>Skandha</strong><small>Groups</small></span>
+      </a>
+      <p>A Bengaluru-based company offering residential construction, interior design and flats for sale.</p>
+      <div class="socials">
+        <a data-cfg-ig href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-instagram"/></svg></a>
+        <a data-cfg-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-whatsapp"/></svg></a>
+      </div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#why-us">Why Choose Us</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#office">Our Office</a></li></ul></div>
+    <div><h4>Services</h4><ul>
+      <li><a href="#services">Residential Construction</a></li><li><a href="#services">Interior Design</a></li><li><a href="#services">Flats for Sale</a></li></ul></div>
+    <div><h4>Contact</h4><ul>
+      <li><a data-cfg-tel href="tel:"><span data-cfg="phone">+91 00000 00000</span></a></li>
+      <li><a data-cfg-mail href="mailto:"><span data-cfg="email">info@example.com</span></a></li>
+      <li>Bengaluru, Karnataka</li></ul></div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> Skandha Groups. All rights reserved.</p>
+    <p><button type="button" class="link-btn" data-dialog="privacyDialog">Privacy Policy</button> <span aria-hidden="true">&nbsp;|&nbsp;</span> <button type="button" class="link-btn" data-dialog="termsDialog">Terms and Conditions</button></p>
+  </div>
+</footer>
+
+<!-- ============ STICKY CONTACT DOCK ============ -->
+<nav class="dock" aria-label="Quick contact">
+  <a class="wa" data-cfg-wa href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg><span class="lbl">WhatsApp</span></a>
+  <a data-cfg-tel href="tel:" aria-label="Call us"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl">Call us</span></a>
+  <a data-cfg-ig href="#" target="_blank" rel="noopener" aria-label="Follow on Instagram"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg><span class="lbl">Instagram</span></a>
+</nav>
+
+<dialog id="privacyDialog" class="legal"><div class="legal-box"><h2>Privacy Policy</h2><p>Placeholder text. Replace this with Skandha Groups' official Privacy Policy, ideally reviewed by a legal professional.</p><form method="dialog"><button class="btn btn-primary">Close</button></form></div></dialog>
+<dialog id="termsDialog" class="legal"><div class="legal-box"><h2>Terms and Conditions</h2><p>Placeholder text. Replace this with Skandha Groups' official Terms and Conditions, ideally reviewed by a legal professional.</p><form method="dialog"><button class="btn btn-primary">Close</button></form></div></dialog>
+
+<script>
+/* ==========================================================
+   EDIT THE CONFIG BELOW with real company details.
+   ========================================================== */
+const CONFIG = {
+  phoneDisplay: "+91 00000 00000",
+  phoneTel: "+910000000000",
+  whatsappNumber: "910000000000",        // country code + number, no "+" or spaces
+  whatsappMessage: "Hello Skandha Groups, I would like to enquire about your services.",
+  instagramUrl: "https://www.instagram.com/skandhagroups",
+  email: "info@skandhagroups.com",
+  addressHtml: "Skandha Groups,<br>[Office address],<br>Bengaluru, Karnataka [PIN code]",
+  hours: "Monday to Saturday, 10:00 am to 6:00 pm",
+  mapQuery: "Bengaluru, Karnataka, India", // replace with the full office address for an exact pin
+  // Paste a Formspree / Getform / Web3Forms style endpoint that accepts JSON POST.
+  // While empty, the form will NOT claim success.
+  formEndpoint: ""
+};
+
+(function applyConfig() {
+  const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
+  document.querySelectorAll("[data-cfg-tel]").forEach(a => a.href = `tel:${CONFIG.phoneTel}`);
+  document.querySelectorAll("[data-cfg-mail]").forEach(a => a.href = `mailto:${CONFIG.email}`);
+  document.querySelectorAll("[data-cfg-wa]").forEach(a => a.href = waUrl);
+  document.querySelectorAll("[data-cfg-ig]").forEach(a => a.href = CONFIG.instagramUrl);
+  document.querySelectorAll('[data-cfg="phone"]').forEach(el => el.textContent = CONFIG.phoneDisplay);
+  document.querySelectorAll('[data-cfg="email"]').forEach(el => el.textContent = CONFIG.email);
+  document.querySelectorAll('[data-cfg="hours"]').forEach(el => el.textContent = CONFIG.hours);
+  document.querySelectorAll('[data-cfg="addressHtml"]').forEach(el => el.innerHTML = CONFIG.addressHtml);
+  const q = encodeURIComponent(CONFIG.mapQuery);
+  const frame = document.getElementById("mapFrame");
+  if (frame) frame.src = `https://maps.google.com/maps?q=${q}&z=14&output=embed`;
+  const dir = document.getElementById("directionsBtn");
+  if (dir) dir.href = `https://www.google.com/maps/search/?api=1&query=${q}`;
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+
+/* Header + mobile menu */
+const header = document.getElementById("header");
+const nav = document.getElementById("nav");
+const toggle = document.getElementById("menuToggle");
+function onScroll() { header.classList.toggle("scrolled", window.scrollY > 40); }
+onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
+function setMenu(open) {
+  nav.classList.toggle("open", open);
+  header.classList.toggle("menu-open", open);
+  toggle.setAttribute("aria-expanded", String(open));
+  toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  document.body.style.overflow = open ? "hidden" : "";
+}
+toggle.addEventListener("click", () => setMenu(!nav.classList.contains("open")));
+nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+document.addEventListener("keydown", e => { if (e.key === "Escape" && nav.classList.contains("open")) { setMenu(false); toggle.focus(); } });
+window.matchMedia("(min-width: 1121px)").addEventListener("change", e => { if (e.matches) setMenu(false); });
+
+
+/* Hero scroll effect: parallax + fade, and a reading-progress bar */
+(function () {
+  const hero = document.getElementById("home");
+  const media = hero.querySelector(".hero-media");
+  const dim = hero.querySelector(".hero-dim");
+  const content = hero.querySelector(".hero-content");
+  const cue = hero.querySelector(".scroll-cue");
+  const bar = document.getElementById("progress");
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let ticking = false;
+  function update() {
+    ticking = false;
+    const y = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (max > 0 ? Math.min(y / max, 1) * 100 : 0) + "%";
+    if (still) return;
+    const p = Math.min(Math.max(y / hero.offsetHeight, 0), 1);
+    media.style.transform = "scale(" + (1 + p * 0.14) + ") translate3d(0," + (p * 6) + "%,0)";
+    dim.style.opacity = (p * 0.65).toFixed(3);
+    content.style.opacity = Math.max(1 - p * 1.5, 0).toFixed(3);
+    content.style.transform = "translate3d(0," + (-p * 70) + "px,0)";
+    if (cue) cue.style.opacity = Math.max(1 - p * 5, 0).toFixed(3);
+  }
+  window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+})();
+
+/* Active nav link */
+const navLinks = [...document.querySelectorAll(".nav ul a")];
+const spySections = navLinks.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+if ("IntersectionObserver" in window) {
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id)); });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  spySections.forEach(s => spy.observe(s));
+}
+
+/* Scroll reveal */
+const revealEls = document.querySelectorAll("[data-reveal]");
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); obs.unobserve(en.target); } });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  revealEls.forEach(el => io.observe(el));
+} else { revealEls.forEach(el => el.classList.add("in")); }
+
+/* Testimonials */
+(function () {
+  const tabs = [...document.querySelectorAll(".t-tab")];
+  const panels = [...document.querySelectorAll(".t-panel")];
+  const bar = document.getElementById("tProgress");
+  const count = document.getElementById("tCount");
+  let current = 0;
+  function show(i, focus) {
+    current = (i + tabs.length) % tabs.length;
+    tabs.forEach((t, n) => { const on = n === current; t.classList.toggle("active", on); t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; });
+    panels.forEach((p, n) => { p.hidden = n !== current; p.classList.toggle("active", n === current); });
+    bar.style.width = ((current + 1) / tabs.length * 100) + "%";
+    count.textContent = (current + 1) + " / " + tabs.length;
+    if (focus) tabs[current].focus();
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener("click", () => show(i));
+    t.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); show(i + 1, true); }
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); show(i - 1, true); }
+    });
+  });
+  document.getElementById("prevBtn").addEventListener("click", () => show(current - 1));
+  document.getElementById("nextBtn").addEventListener("click", () => show(current + 1));
+  let x0 = null; const wrap = document.querySelector(".t-wrap");
+  wrap.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+  wrap.addEventListener("touchend", e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null; if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1)); });
+  show(0);
+})();
+
+/* Service links preselect the enquiry form */
+document.querySelectorAll("[data-service]").forEach(link => {
+  link.addEventListener("click", () => { document.getElementById("service").value = link.dataset.service; });
+});
+
+/* Enquiry form */
+const form = document.getElementById("enquiryForm");
+const statusEl = document.getElementById("formStatus");
+const submitBtn = document.getElementById("submitBtn");
+const rules = {
+  name:    v => v.trim().length >= 2 ? "" : "Enter your full name.",
+  phone:   v => /^[+]?[\d\s()-]{8,16}$/.test(v.trim()) ? "" : "Enter a valid phone number, for example +91 98765 43210.",
+  email:   v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? "" : "Enter a valid email address.",
+  service: v => v ? "" : "Select the service you need."
+};
+function validateField(id) {
+  const input = form.elements[id];
+  const msg = rules[id](input.value);
+  input.closest(".field").classList.toggle("invalid", !!msg);
+  input.setAttribute("aria-invalid", msg ? "true" : "false");
+  const err = document.getElementById(`${id}-err`);
+  err.textContent = msg;
+  if (msg) input.setAttribute("aria-describedby", err.id); else input.removeAttribute("aria-describedby");
+  return !msg;
+}
+Object.keys(rules).forEach(id => {
+  const el = form.elements[id];
+  el.addEventListener("blur", () => validateField(id));
+  el.addEventListener("input", () => { if (el.closest(".field").classList.contains("invalid")) validateField(id); });
+});
+function showStatus(text, type) { statusEl.textContent = text; statusEl.className = "form-status show " + (type || ""); }
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  statusEl.className = "form-status";
+  const results = Object.keys(rules).map(validateField);
+  if (results.includes(false)) {
+    form.elements[Object.keys(rules).find(id => form.elements[id].getAttribute("aria-invalid") === "true")].focus();
+    showStatus("Please fix the highlighted fields and submit again.", "error");
+    return;
+  }
+  if (form.elements._gotcha.value) return;
+  if (!CONFIG.formEndpoint) {
+    showStatus("Your enquiry was not sent because the form is not connected yet. Please call us or message us on WhatsApp instead.", "error");
+    return;
+  }
+  submitBtn.disabled = true; submitBtn.textContent = "Sending...";
+  const data = Object.fromEntries(new FormData(form).entries()); delete data._gotcha;
+  try {
+    const res = await fetch(CONFIG.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
+    if (!res.ok) throw new Error("Request failed: " + res.status);
+    form.reset();
+    showStatus("Thank you. Your enquiry has been sent and our team will contact you soon.", "success");
+  } catch (err) {
+    showStatus("We could not send your enquiry. Please try again, or call or WhatsApp us directly.", "error");
+  } finally { submitBtn.disabled = false; submitBtn.textContent = "Submit Enquiry"; }
+});
+
+/* Legal dialogs */
+document.querySelectorAll("[data-dialog]").forEach(b => b.addEventListener("click", () => document.getElementById(b.dataset.dialog).showModal()));
+document.querySelectorAll("dialog.legal").forEach(d => d.addEventListener("click", e => { if (e.target === d) d.close(); }));
+</script>
+</body>
+</html>
